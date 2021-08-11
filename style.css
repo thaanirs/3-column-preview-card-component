@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+}
+
+main{
+    margin: 8em 12.5em;
+    display: flex;
+}
+
+
+main div{
+    /* padding: 3em 4.5em 3em 3em; */
+    padding: 3em;
+}
+
+h1{
+    font-family: 'Big Shoulders Display', cursive ;
+    color: hsl(0, 0%, 95%);
+    margin: 1em 0;
+    
+}
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    /* padding-bottom: 3em; */
+    margin-bottom: 5em;
+    line-height: 2em;
+}
+
+a{
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    padding: 1em 2em;
+    border-radius: 2em;
+    border: 2px solid hsl(0, 0%, 95%) ;
+    font-family: 'Lexend Deca', sans-serif; 
+}
+
+#first{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+}
+#second{
+    background-color: hsl(184, 100%, 22%);
+}
+#third{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+
+
+
+#first a{
+    color: hsl(31, 77%, 52%);
+}
+#second a{
+    color: hsl(184, 100%, 22%);
+}
+#third a{
+    color: hsl(179, 100%, 13%);
+}
+
+#first a:hover{
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(31, 77%, 52%);
+    /* background-color: transparent; */
+}
+#second a:hover{
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(184, 100%, 22%);
+}
+#third a:hover{
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 13%);
+    
+}
+
+@media(max-width:500px) {
+    
+    main{
+        flex-direction: column;
+        margin: 6em 2em;
+    }
+    #first{
+        border-top-right-radius: 0.5em;
+        border-bottom-left-radius: 0em;
+    }
+    #third{
+        border-top-right-radius: 0em;
+        border-bottom-left-radius: 0.5em;
+    }
+
+}
